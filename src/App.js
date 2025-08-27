@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Home from "./pages/Home";
-import OurMeats from "./pages/OurMeats";
-import Order from "./pages/Order";
-import Faqs from "./pages/Faqs";
-import AboutUs from "./pages/AboutUs";
+import Home from "./Pages/Home";
+import OurMeats from "./Pages/OurMeats";
+import Order from "./Pages/Order";
+import Faqs from "./Pages/Faqs";
+import AboutUs from "./Pages/AboutUs";
+
 
 function App() {
   return (
@@ -21,10 +22,10 @@ function App() {
         {/* Page Routes */}
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/our-meats" element={<OurMeats />} />
+          <Route path="/ourmeats" element={<OurMeats />} />
           <Route path="/order" element={<Order />} />
           <Route path="/faqs" element={<Faqs />} />
-          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/aboutus" element={<AboutUs />} />
         </Routes>
       </div>
     </Router>

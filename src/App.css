@@ -7,10 +7,21 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: space-between; 
-  padding: 50px; 
+  gap: 150px;
+  padding: 50px 50px 50px 50px; 
+}
+.homepage::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* stretch to cover */
+  background-color: rgba(255, 255, 255, 0.2); /* white overlay, 50% see-through */
+  z-index: 0;
 }
 
+.homepage > * {
+  position: relative;
+  z-index: 1; 
+}
 
 .nav-box {
   background-color: #ebeddf; 
@@ -18,7 +29,17 @@
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
+  width:250px;
+  height: 300px;
+  font-size: larger;
+  margin-left: 50px;
+}
+.homepage-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* space between links */
+  align-items: center;
 }
 
 
@@ -34,7 +55,7 @@
 
 
 .homepage-logo {
-  max-width: 200px;
+  width:700px;
   height: auto;
 }
 

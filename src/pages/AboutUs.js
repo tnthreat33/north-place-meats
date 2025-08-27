@@ -1,5 +1,5 @@
 import '../App.css';
-import aboutus from "../images/aboutus.svg";
+import aboutus from "../images/aboutus.jpg";
 
 
 export default function AboutUs() {

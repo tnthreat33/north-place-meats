@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from "react-router-dom";
-import Home from "./pages/Home";
-import OurMeats from "./pages/OurMeats";
-import Order from "./pages/Order";
-import Faqs from "./pages/Faqs";
-import AboutUs from "./pages/AboutUs";
+import Home from "./Pages/Home";
+import OurMeats from "./Pages/OurMeats";
+import Order from "./Pages/Order";
+import Faqs from "./Pages/Faqs";
+import AboutUs from "./Pages/AboutUs";
 
 function App() {
   return (

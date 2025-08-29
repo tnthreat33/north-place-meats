@@ -10,6 +10,23 @@ body {
   font-style: normal;
 }
 
+.main-nav {
+  padding: 10px;
+  background: #ebeddf;
+}
+
+.main-nav a {
+  margin: 30px;
+  color: #155a3b;
+  text-decoration: none;
+}
+
+.main-nav a:hover {
+  text-decoration: underline; 
+  color: #0e3f2b; 
+}
+
+
 .homepage {
   position: relative;
   background-image: url("./images/homepage.jpg");

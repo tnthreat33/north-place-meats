@@ -15,7 +15,7 @@ export default function AboutUs() {
         <div className="section-one">
                   <img src={aboutus} alt="About Us" className="about-image" />
         <p className="about-text">
-          Since ??, Blocher Family Farms has proudly called Northern Indiana home. For over a century, our family has worked the land, raising high-quality cattle with care, integrity, and a deep respect for tradition.
+          Since 1850, Blocher Family Farms has proudly called Northern Indiana home. For over a century, our family has worked the land, raising high-quality cattle with care, integrity, and a deep respect for tradition.
         </p>
         </div>
         <div className="section-two">

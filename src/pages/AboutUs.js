@@ -19,7 +19,7 @@ export default function AboutUs() {
         </p>
         </div>
         <div className="section-two">
-                  <img src={aboutus2} alt="About Us" className="about-image" />
+          <img src={aboutus2} alt="About Us" className="about-image" />
 
         <p className="about-text">
           Our beef is born, raised, and finished right here in Indiana—never leaving the state. From pasture to plate, our cows are raised humanely and responsibly, ensuring every cut is rich in flavor and raised the right way.

@@ -134,37 +134,14 @@ background-color: rgba(235, 237, 223, 0.85);
 .meats-layout {
   display: flex;
   align-items: flex-start;
-  gap: 16px;
-}
-
-.hover-panel {
-  width: 220px;
-  flex: 0 0 220px;
-}
-
-.hover-card {
-  position: sticky;
-  top: 12px;
-  background: #fff;
-  border: 1px solid #e6e6e6;
-  border-radius: 12px;
-  padding: 16px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-}
-
-.hover-title {
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #666;
-  margin-bottom: 6px;
-}
-
-.hover-value {
-  font-size: 28px;
-  font-weight: 700;
+  gap: 20px; 
 }
 
 .image-wrap {
-  max-width: 100%;
+  flex: 0 0 auto; 
+}
+
+.hover-panel {
+  flex: 0 0 220px;
+  background-color: #ebeddf;
 }

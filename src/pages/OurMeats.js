@@ -1,9 +1,30 @@
-import React, { useState } from "react";
+import React, { useState } from "react"; 
 import cowDiagram from "../images/finalcow diagram.svg";
 import "../App.css";
 
 export default function OurMeats() {
   const [selectedSection, setSelectedSection] = useState(null);
+
+  const sectionInfo = {
+  1: { name: "Shin", description: "Tough, lean cut best for slow cooking into stews and soups." },
+  2: { name: "Clod", description: "Lean shoulder muscle, great for ground beef or braising." },
+  3: { name: "Neck", description: "Flavorful but fatty, often used for minced meat and stocks." },
+  4: { name: "Cheek", description: "Tender when slow-cooked, prized for rich braised dishes." },
+  5: { name: "Chuck Rib", description: "Marbled and flavorful, ideal for roasts or stews." },
+  6: { name: "Middle Rib", description: "Tender rib section, great for grilling or roasting." },
+  7: { name: "Fore Rib", description: "Rich and marbled, often cut into ribeye steaks." },
+  8: { name: "Sirloin", description: "Lean yet tender, excellent for steaks and roasts." },
+  9: { name: "Shoulder", description: "Versatile cut, good for braising, roasting, or ground beef." },
+  10: { name: "Brisket", description: "Tough, fatty cut perfect for smoking or slow braising." },
+  11: { name: "Thin Flank", description: "Lean with coarse grain, best for stir-fries or ground beef." },
+  12: { name: "Rump", description: "Firm but flavorful, often used for steaks or roasting." },
+  13: { name: "Edge Bone", description: "Tough section, typically used for boiling beef or stews." },
+  14: { name: "Round", description: "Lean and moderately tough, great for roasting or deli meat." },
+  15: { name: "Velny Piece", description: "A lean, lesser-known cut used in stews or minced meat." },
+  16: { name: "Buttock", description: "Lean, dense cut suitable for slow roasting or braising." },
+  17: { name: "Leg", description: "Very lean and sinewy, best for ground meat or long cooking." },
+};
+
 
   const handleClick = (sectionId) => {
     setSelectedSection(sectionId);
@@ -14,9 +35,10 @@ export default function OurMeats() {
       <div className="header-box">
         <h1>Learn About Our Meats</h1>
       </div>
+      <div className="section-header">
       <h3>Click Section to Learn more.</h3>
+      </div>
 
-      {/* FLEX CONTAINER: IMAGE + INFO BOX */}
       <div className="meats-layout">
         <div className="image-wrap">
           <img
@@ -52,7 +74,7 @@ export default function OurMeats() {
           className="hover-panel"
           aria-live="polite"
           style={{
-            minWidth: "220px",
+            minWidth: "250px",
             padding: "30px",
             border: "1px solid #ccc",
             borderRadius: "8px",
@@ -62,12 +84,32 @@ export default function OurMeats() {
             backgroundColor: "#ebeddf",
           }}
         >
-          <h3>Section Info</h3>
-          <p>
-            {selectedSection
-              ? `Section ${selectedSection} clicked`
-              : "Click a section"}
-          </p>
+          {selectedSection ? (
+            <>
+               <h3>{sectionInfo[selectedSection].name}</h3>
+               <p>{sectionInfo[selectedSection].description}</p>
+               <button
+                  onClick={() => (window.location.href = "/order")}
+                  style={{
+                    marginTop: "15px",
+                    padding: "10px 20px",
+                    backgroundColor: "#155a3b",
+                    color: "white",
+                    border: "none",
+                    borderRadius: "8px",
+                    cursor: "pointer",
+                    fontSize: "16px",
+                  }}
+                >
+                  Buy Now
+                </button>
+            </>
+          ) : (
+            <>
+              <h3>Section Info</h3>
+              <p>Click a section</p>
+            </>
+          )}
         </aside>
       </div>
     </div>

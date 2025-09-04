@@ -139,7 +139,7 @@ background-color: rgba(235, 237, 223, 0.85);
 
 .section-header h3{
   margin-left: 100px;
-  margin-bottom: 0;
+  margin-bottom: -30px;
 }
 
 .image-wrap {

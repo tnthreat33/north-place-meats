@@ -4,6 +4,7 @@ import OurMeats from "./pages/OurMeats";
 import Order from "./pages/Order";
 import Faqs from "./pages/Faqs";
 import AboutUs from "./pages/AboutUs";
+import Footer from "./pages/Footer"
 
 function App() {
   return (

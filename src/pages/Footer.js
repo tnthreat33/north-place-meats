@@ -1,6 +1,5 @@
-// src/components/Footer.jsx
-import { Link } from "react-router-dom";
 import "../App.css";
+import logo from "../images/3.svg";
 
 
 export default function Footer() {
@@ -8,7 +7,9 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-top">
         <div className="footer-logo">
-          <div className="logo-mark" aria-hidden />
+          <div className="logo-mark">
+            <img src={logo} alt="Northplace Meats logo" />
+          </div>
           <div className="logo-text">
             <span className="brand">NORTHPLACE MEATS</span>
             <span className="est">EST • 2018</span>

@@ -306,11 +306,10 @@ background-color: rgba(235, 237, 223, 0.85);
   gap: 12px;
 }
 
-.logo-mark {
-  width: 72px;
-  height: 72px;
+.logo-mark img{
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
-  border: 5px solid var(--fg);
   position: relative;
   background: transparent;
 }

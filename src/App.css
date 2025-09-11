@@ -178,7 +178,7 @@ background-color: rgba(235, 237, 223, 0.85);
 
 /* Individual product card */
 .card {
-  background: #fff;
+  
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   padding: 16px;
@@ -188,9 +188,7 @@ background-color: rgba(235, 237, 223, 0.85);
   transition: transform 0.2s ease;
 }
 
-.card:hover {
-  transform: translateY(-3px);
-}
+
 
 /* Card image */
 .card-img {
@@ -228,4 +226,62 @@ background-color: rgba(235, 237, 223, 0.85);
 
 .card-btn:hover {
   background: #236338;
+}
+
+.faq-container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  align-items: top;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.faq-left h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin: 0.2rem 0;
+  color:#155a3b;
+
+}
+
+.faq-underline {
+  border-bottom: 1px solid #ccc;
+  width: 60%;
+  margin-top: 0.5rem;
+}
+
+.faq-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.faq-item h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color:#155a3b;
+}
+
+.faq-item p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.faq-link {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .faq-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .faq-underline {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

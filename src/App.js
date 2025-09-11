@@ -37,6 +37,8 @@ function AppContent() {
         <Route path="/faqs" element={<Faqs />} />
         <Route path="/aboutus" element={<AboutUs />} />
       </Routes>
+
+      {!isHomePage && <Footer />}
     </div>
   );
 }

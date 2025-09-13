@@ -19,9 +19,9 @@ export default function Footer() {
         <div className="footer-block">
           <h4>Office</h4>
           <address>
-            123 Anywhere St. Any City ST 12345<br />
-            Tel: <a href="tel:+1234567890">+1 234-567-890</a><br />
-            <a href="mailto:hello@reallygreatsite.com">hello@northplacemeats.com</a>
+            North Manchester, Indiana<br />
+            Tel: <a href="tel:+12609011685">+1 260-901-1685</a><br />
+            <a href="mailto:info@northplacemeats.com">info@northplacemeats.com</a>
           </address>
         </div>
 

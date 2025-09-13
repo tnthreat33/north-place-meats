@@ -289,21 +289,21 @@ background-color: rgba(235, 237, 223, 0.85);
 .footer {
   background: #155a3b;
   color:  #ebeddf;
-  padding: 24px 20px 16px;
   border-top: 1px solid #ebeddf;
 }
 
 .footer-top {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr;
-  gap: 28px;
-  align-items: start;
+  max-height: 150px;
+  align-items: center;
 }
 
 .footer-logo {
   display: flex;
   align-items: center;
   gap: 12px;
+  max-height: 150px;
 }
 
 .logo-mark img{
@@ -358,6 +358,8 @@ background-color: rgba(235, 237, 223, 0.85);
   display: flex;
   align-items: center;
   gap: 14px;
+  padding-left: 20px;
+  margin-top:-40px;
 }
 
 .social-label {

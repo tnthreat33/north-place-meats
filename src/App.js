@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 import Home from "./pages/Home";
 import OurMeats from "./pages/OurMeats";
 import Order from "./pages/Order";
@@ -15,19 +16,34 @@ function App() {
 
 function AppContent() {
   const location = useLocation();
-
   const isHomePage = location.pathname === "/";
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => setMenuOpen(false), [location.pathname]);
 
   return (
     <div>
       {!isHomePage && (
-        <nav className="main-nav">
-          <Link to="/">Home</Link>
-          <Link to="/ourmeats">Our Meats</Link>
-          <Link to="/order">Order</Link>
-          <Link to="/faqs">FAQs</Link>
-          <Link to="/aboutus">About Us</Link>
-        </nav>
+        <header className="site-header">
+          <Link className="brand" to="/">Home</Link>
+
+          <button
+            className="menu-toggle"
+            aria-expanded={menuOpen}
+            aria-controls="main-menu"
+            aria-label="Toggle navigation"
+            onClick={() => setMenuOpen(v => !v)}
+          >
+            ☰
+          </button>
+
+          <nav id="main-menu" className={`main-nav ${menuOpen ? "open" : ""}`}>
+            <Link to="/ourmeats">Our Meats</Link>
+            <Link to="/order">Order</Link>
+            <Link to="/faqs">FAQs</Link>
+            <Link to="/aboutus">About Us</Link>
+          </nav>
+        </header>
       )}
 
       <Routes>

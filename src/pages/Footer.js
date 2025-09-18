@@ -1,6 +1,5 @@
-// src/components/Footer.jsx
-import { Link } from "react-router-dom";
 import "../App.css";
+import logo from "../images/3.svg";
 
 
 export default function Footer() {
@@ -8,7 +7,9 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-top">
         <div className="footer-logo">
-          <div className="logo-mark" aria-hidden />
+          <div className="logo-mark">
+            <img src={logo} alt="Northplace Meats logo" />
+          </div>
           <div className="logo-text">
             <span className="brand">NORTHPLACE MEATS</span>
             <span className="est">EST • 2018</span>
@@ -18,9 +19,9 @@ export default function Footer() {
         <div className="footer-block">
           <h4>Office</h4>
           <address>
-            123 Anywhere St. Any City ST 12345<br />
-            Tel: <a href="tel:+1234567890">+1 234-567-890</a><br />
-            <a href="mailto:hello@reallygreatsite.com">hello@northplacemeats.com</a>
+            North Manchester, Indiana<br />
+            Tel: <a href="tel:+12609011685">+1 260-901-1685</a><br />
+            <a href="mailto:info@northplacemeats.com">info@northplacemeats.com</a>
           </address>
         </div>
 

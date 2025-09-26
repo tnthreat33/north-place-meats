@@ -8,8 +8,8 @@ import chuck from "../images/chuck roast.jpg";
 import shortrib from "../images/boneless short rib.jpg";
 import porterhouse from "../images/porterhouse.jpg";
 import strip from "../images/strip.webp";
-import tbone from "../image/tbone.jpg";
-import tenderloin from "../image/tenderloin.jpg";
+import tbone from "../images/tbone.jpg";
+import tenderloin from "../images/tenderloin.jpg";
 
 const sectionData = {
     1:  { name: "Middle Rib", items: [{ id: "mrib-1", name: "Tenderloin Steak", price: 18.00, img: tenderloin},{ id: "mrib-2", name: "Porterhouse Steak", price: 11.00, img: porterhouse},{ id: "mrib-3", name: "T-Bone Steak", price: 10.00, img: tbone} ,{ id: "mrib-4", name: "New York Strip", price: 11.50, img: strip} ] },

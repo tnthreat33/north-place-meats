@@ -17,6 +17,10 @@ const sectionData = {
   4:  { name: "Neck", items: [{ id: "neck-1", name: "Beef Neck Bones", price: 6.99, img: chuck},{ id: "neck-2", name: "Boneless Short Rib", price: 6.99, img: neck},{ id: "neck-3", name: "Chuck Roast", price: 16.99, img: shortrib}  ] },
   2: { name: "Clod", items: [{ id: "clod-1", name: "Beef Clod Roast", price: 8.49, img: clod }] },
   3: { name: "Shin", items: [{ id: "shin-1", name: "Beef Shin", price: 7.99, img: shin }] },
+  6: {name:"Middle Rib", items: [{ id: "mrib-1", name: "Tenderloin Steak", price: 18.99, img: shin }, { id: "mrib-2", name: "Porterhouse Steak", price: 11.99, img: shin }, { id: "mrib-3", name: "T-Bone Steak", price: 10.99, img: shin }, { id: "mrib-4", name: "Strip Steak", price: 11.50, img: shin }, { id: "mrib-5", name: "Tenderloin Roast", price: 16.99, img: shin }]},
+  5: {name:"Front Rib", items: [{ id: "frib-1", name: "Ribeye Steak", price: 14.50, img: shin }, { id: "frib-2", name: "Short Ribs", price: 5.99, img: shin }]},
+  10: { name: "Flank", items: [{ id: "flank-1", name: "Flank Steak", price: 6.99, img: shin }] },
+
 };
 
 export default function Order() {
